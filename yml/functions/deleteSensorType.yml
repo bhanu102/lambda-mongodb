@@ -1,0 +1,13 @@
+deleteSensorType:
+  handler: handler.deleteSensorType
+  layers:
+    - Ref: PythonRequirementsLambdaLayer
+  events:
+    - http:
+        path: /api/v1/deleteSensorType/groupId/{id}
+        method: post
+        request:
+          parameters:
+            paths:
+              id: true
+        authorizer: ${file(yml/authorizer.yml):authorizer}

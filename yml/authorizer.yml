@@ -1,0 +1,5 @@
+authorizer:
+  name: MyAuthorizer
+  arn: arn:aws:cognito-idp:us-east-1:454227745440:userpool/us-east-1_C1K73Cw7G
+  scopes:
+    - email

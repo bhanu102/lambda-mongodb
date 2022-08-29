@@ -1,0 +1,9 @@
+addSensorType:
+  handler: handler.addSensorType
+  layers:
+    - Ref: PythonRequirementsLambdaLayer
+  events:
+    - http:
+        path: /api/v1/addSensorType
+        method: post
+        authorizer: ${file(yml/authorizer.yml):authorizer}
