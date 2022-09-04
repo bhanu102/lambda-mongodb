@@ -11,9 +11,9 @@ plugins:
 
 custom:
   pythonRequirements:
-    #When there are large dependencies
-    dockerizePip: true
-    zip: true
+    #When there are larger dependencies
+#     dockerizePip: true
+#     zip: true
     layer:
       name: python-pymongo-dnspython
       description: "Layer which contains pymongo and dnspython library"
