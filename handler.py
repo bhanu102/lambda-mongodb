@@ -1,8 +1,8 @@
 #When there are large dependencies
-try:
-  import unzip_requirements
-except ImportError:
-  pass
+# try:
+#   import unzip_requirements
+# except ImportError:
+#   pass
 
 import json
 import random
